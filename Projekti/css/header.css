@@ -1,0 +1,250 @@
+ * {
+  padding: 0%;
+  margin: 0%;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background: darkslategray;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.navi {
+
+  width: 100%;
+  height: 45px;
+  background: #a16842;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 4%;
+  width: 20%;
+}
+
+img {
+  width: 30%;
+  height: 100%;
+}
+
+.navbar {
+  position: relative;
+  width: 70%;
+  padding: 5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbari {
+  position: relative;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.searchBox {
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+form {
+  display: flex;
+}
+
+.searchBox input {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #a57453;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  margin-right: 0.5rem;
+}
+
+.searchBox button {
+
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #a57453;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #b8784e;
+  border-radius: 0.375rem;
+  background-color: transparent;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#searchIcon {
+  position: relative;
+  left: -30px;
+  font-size: 22px;
+  color: rgb(77, 77, 77);
+  cursor: pointer;
+  z-index: 221;
+}
+
+ul {
+  width: 60%;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin-left: 4%;
+  transition: all 0.5s ease;
+  text-align: center;
+  cursor: pointer;
+  padding: 1%;
+  height: 20px;
+  overflow: hidden;
+}
+
+ul li a:hover {
+  color: #b8784e;
+  transition: all 0.5s ease;
+
+}
+
+.navi {
+  transition: all 0.5s ease;
+  text-align: center;
+  cursor: pointer;
+  padding: 1%;
+  height: 20px;
+  overflow: hidden;
+}
+
+.navi:hover {
+  color: darkslategray;
+  transition: all 0.5s ease;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+ul li a:active,
+:focus {
+  color: #a57453;
+  font-weight: 700;
+}
+
+#menuIcon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+    display: block;
+    width: 60%;
+    display: none;
+  }
+
+  .brand {
+    width: 30%;
+    height: 70%;
+  }
+
+  .navo {
+    margin-top: 20%;
+  }
+
+  .navbar.navactive {
+    display: inline;
+  }
+
+  .searchBox {
+    position: relative;
+    width: 100%;
+    top: 60px;
+    z-index: 221;
+    left: 5%;
+  }
+
+  #menuIcon {
+    display: inline;
+    position: fixed;
+    font-size: 25px;
+    margin-left: 88%;
+    z-index: 222;
+    float: right;
+    padding: 1%;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgb(221, 221, 221);
+  }
+
+  .navbar ul {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+  border-color: hsl(180, 23%, 21%);
+  }
+
+  .navbar ul li {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    position: relative;
+    top: 50px;
+    padding: 2%;
+  }
+
+  ul li #headIcon {
+    display: inline-block;
+    font-size: 33px;
+  }
+
+  ul li:hover {
+    background: rgb(46, 72, 72);
+
+  }
+
+  ul li a {
+    margin-left: 40px;
+    font-family: 600;
+  }
+
+  .navi {
+
+    width: 100%;
+    height: 80%;
+  }
+
+}
